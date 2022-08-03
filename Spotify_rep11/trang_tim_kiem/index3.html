@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Rep 1:1 - Tìm kiếm</title>
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left_of_page">
+            <div class="logo_page">
+               <a href="http://127.0.0.1:5500/trang_chinh02/index1.html">
+                   <img src="https://www.xboxdynasty.de/wp-content/uploads/2017/08/spotify-music-5-720x405.jpg" alt="logo page">
+                </a>
+            </div>
+
+            <div class="content_left">
+                <ul class="content">
+                    <li>
+                        <a href="http://127.0.0.1:5500/trang_chinh02/index1.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABI0lEQVRIS+2V0Q2CMBRFacK/OoE6gboBDgAJG+hkugEfDKAjwAY4gQ5AgrekJaUUuI3hT35K29d7XvtuQQQLP2Jh/YAGZFm2DsPwIROq6/qcpumHSY4CGOJHJVqwkFmAJV4qwAEtBZkE2OLIOpIAHNUTDQUZBbjE9bmrOQriBEyJ68KykAGAEfeB9AA+4iykA9hWREE3rNfV2rfLwh0gz/NCOaONi+N41sLmRcP6xugXWH+S/aUAJQDtpRxkqTPRO0A/aprmJoTYmRljrMLYFXHSroG9TscygArBW1Ncv0tIkiT7XwHt2do1cezUGcfs4A/ol489WzbOVQP5p1q5XEOMvWCGnp1dgAhC9zFrTkBemLvoezF6D4gsvUK8vjdeyir4C4D/EygHX3n2AAAAAElFTkSuQmCC"/>                        <span>Trang chủ</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="http://127.0.0.1:5500/trang_tim_kiem/index3.html">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABTklEQVRIS8VUixHBQBDNVUAHqIB0QAc6oAN0QgdUoATpABVQAhXEe5ndzCUumwgZN7OTSbL73tvPrYs6Pq5j/KgxQZqmQ4hZwaawiQi74JnAds65e0hsIwKAbwXcSngLkk3ZoZYA4FQ5lsADngTitwj/mMkattCM8C/2SUwCT/mTpVHgskohYql6Ui6SZqeSQGp+E7+4ClyBhOQs7yPtiUWgdWcDc0VWE0Cyl3LlMRaB1r5WfSCLi/bCIkizGuJYqgP9KMT9leAOdQNYmxJdkXh2Gf/a5CEEdDemTM+7aA+8zmou2gk+/U8uGp0ZpIuNnJxzzri/KrgAlzJNee11uoI9gHIf/ArnBEYg6wQv5BtBAJw76CGrgzd6CtPlp+RcgJy6t1MgqAKvUW7+LhPM4X2EUVmm/BtwxoZKRJLkF+BBgm8Vl+M/WmRtyDsneAE/nqkZYdZuLQAAAABJRU5ErkJggg=="/>                            <span>Tìm kiếm</span> 
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="#">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABQUlEQVRIS72V0U3DMBCG/0v8Dp0AOkHpBvAcX8ATABNQNoAJChNQJnCJk2fYgG5ARsgAUYwsJVJoWgqp03uyZOk+/ff7PxMGLhq4Pw4PMMZYp4qZads5SZIbAJM4ju93TaCj4I+AgoiOgiCYRlG0+g3SC2CMeQJwB+CZmWfeAVmWnVVV9QmgYOaRd4BraIzJAZwAUMy83AbpNSLXLE3TmbV2DuCVmZ3pG6s3QGt9KoT4cl3LshwppYpNhN6AWsXSWntprb2N43jhHeDyQEQvAFbMPPUO0Fofh2GYu0yUZTlWSjnjf9ReI6pfkxvNNYBHZn4YAnAO4J2Icinl2DtgLRMXzPzRhuw9ohrQrI5OJrwAWpnorA4vgFqF26qT9Ux4AzSZIKI3KeVV44M3gMuEEMJ5sWgbffgvc9cX+N/7wRV8A0mDRigORQHIAAAAAElFTkSuQmCC"/>
+                            <span onclick="sign_up()">Thư viện</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABm0lEQVRIS71V0XHCMAx98iJtJwAmoP9EuXaCskFhEsIEbScoxfDfTtCwASxi9ZRLcsYhdo8WdOef2NHTk56fCRcOunB+JAHW6/XUGDMWkSEAXRolEZXOuVWe5x+xInsBrLUPRLQQkdtoAqK9iMyZeXXq3EkAa20B4Ln+4UBEBRF9TiaTUr9tt9uhiNyLyAzAjX4TkSLP83kI0gHwkxPRPMsyBeuNzWYzE5FFfWDJzAraxhGAtgXAu+4aY0ZNxSkhKCPn3Hd97tFvVwiwV8p9lVtrRZMwc4d5w4SI9lmW3TVFtQdVLUT0AuDAzCcHGwPQhNbaqkAALYsWwFr7CuAp1vcUgDePN2aeKqgPoAoZxHqfAvBmUTLzKATo9LdJmBqyP5OwCJ/BxQH+s0U7Zq5s5apDri5ZqGO//6khR2Xq6/gvFy28R9e1ipqF76QzZl7+m9k1iQJHVb8vjDFfvl0758ZEpE7a2ErHSY9UFFZZO6uyqfw+EgcAyvT3D06gHFWXLtX1oN7b6bMJYNWXuOOmKTs4dz/56J+buPnvB8sXHijohxk2AAAAAElFTkSuQmCC"/>
+                            <span onclick="sign_up()">Tạo playlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABvUlEQVRIS72VMU/CUBDH7ygTIUxtoh8AFycHqq2JurjopIubnwEnF5lwcZLP4MbkpIuLkgjSzi7yATBpJ0KcgDOvts17r68tNEEm0l7/v7v/3buHsOYfrlkfcgGm/n5KWNpBoi1ArAcJEY0I8Qtg0XO9/V5WkqmAhuEcIMybALCZU+WYQOu4nqkEKQG7+keTkC5WsQ+JukPf7sjfJABFxCNRJOwO/T0BIgBCW+5WyVyOJdCuebsEgKn3HwFxI1EmwZQQqvxzVDwL348dzzqPq4r+sGkBLN3IIgvU2iyjI+Oz+kOTFntfwVr71duesopLNG/JcL6KuIKG3m8h4gkPkMtVWaeylYieXd9us/gYYOr9h3jO/2b92/Hts2X6kbCWaOT49qUIMAYDWawCtWNmRRYksA4mL3KM41lWLoAAnlzPus0CqKxl8UmAbFGomgVJE2erJGFRajBrh6KSzHhVk/MOGQ/JEg/mgztsSx20qAcMAkQoj7PQI2n6/ndVsEzWuuyiUotAVJtUOAfyrAdNp9mVavnJnhOW71e6cHgBBgKaHSJAXbgyAUaA5bc04cQ2XWbnFInJvfSLiPLf/AIzUuUZhyvkKwAAAABJRU5ErkJggg=="/>
+                            <span onclick="sign_up()">Bài hát đã thích</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right_of_page">
+            <div class="nav">
+                <form class="search_bar" action="https://www.google.com/search" method="get">
+                    <input type="text" placeholder="Nghệ sĩ, bài hát hoặc podcasts" name="q">
+                    <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABTUlEQVRIS8WUjVECMRBGoQItQSsQK1A7kAo4KkAqECpQKgAqACsQOoAKtASpAL7HbJwMJCEMAXbmm8zdZfP2L1evndnqZz6/FgPcCtyRXqWGBbHQOpUG0l9uYCFAJecPCUjIOLwrjXIguwAOH5rjl9ZPaWbPz1p70pM9Ny2jJMcHEPGPRd5ORAjk3cp0b2sU4gOcI5FT+5SRFZn0LassAE18kF68ssQcKde3hM9jKhI/g7VtzB3drP0XBRxTIno0kZaSuyfBSoWazGViBIs3mTH9lW5sMpiQkPX0kjFdSXdS8lanLtrMQHOjMDkczIodHFE2xX4V3GAyCRmR8x0YQYykcWRv8mf3Jieayd3AaCj94XDK4oaCb0C4/XuWO/Mh30ov3X8rCjkF4A5tefS9TE4FHISUAOxCaDjl21opgIOw/h9eGhAahKIZXAewAdh4Qxm4MtzTAAAAAElFTkSuQmCC"/></button>
+                </form>
+                <a href="http://127.0.0.1:5500/trang_dang_ky/index2.html" id="sign_up">Đăng kí</a>
+                <a href="http://127.0.0.1:5500/trang_dang_nhap/index4.html" id="log_in">Đăng nhập</a>
+            </div>
+            <div class="main_content">
+                <div class="music">
+                    <div class="headline">
+                        <h2>Duyệt tìm tất cả</h2>
+                   </div>
+                   <div class="second_content_music">
+                       <div class="podcast">
+                            <a class="podcast" href="https://open.spotify.com/genre/podcasts-web">
+                                <div class="light_green">
+                                    <h2>Podcast</h2>
+                                    <img src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5" alt="Podcast">
+                                </div>
+                            </a>
+                       </div>
+
+                        <div class="for_you">
+                            <a href="http://127.0.0.1:5500/trang_chinh02/index1.html">
+                                <div class="blue">
+                                    <h2>For you</h2>
+                                    <img src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="For you">
+                                </div>
+                            </a>
+                        </div>
+                        <div  class="ranking">
+                            <a href="https://open.spotify.com/genre/browse-charts-tab">
+                                <div class="purple">
+                                   <h2>Ranking</h2>
+                                   <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="Ranking">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="new_realeases">
+                            <a href="https://open.spotify.com/genre/new-releases-page">
+                                <div class="red">
+                                    <h2>New releases</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="Mới phát hành">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="discover">
+                            <a href="https://open.spotify.com/genre/discover-page">
+                                <div class="purple">
+                                    <h2>Discover</h2>
+                                    <img src="https://t.scdn.co/images/d0fb2ab104dc4846bdc56d72b0b0d785.jpeg" alt="Explore">
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+
+                   <!-- cột thứ hai -->
+                   <div class="second_content_music">
+                        <div class="live_stream">
+                            <a class="live_stream" href="https://open.spotify.com/concerts">
+                                <div class="blue">
+                                    <h2>Live Stream</h2>
+                                    <img src="https://t.scdn.co/images/8cfa9cb1e43a404db76eed6ad594057c" alt="Live Stream">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="pop">
+                                <a href="http://127.0.0.1:5500/trang_chinh02/index1.html">
+                                    <div class="light_green">
+                                    <h2>Pop</h2>
+                                    <img src="https://t.scdn.co/images/0a74d96e091a495bb09c0d83210910c3" alt="Pop">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div  class="hip_hop">
+                            <a href="https://open.spotify.com/genre/hiphop-page">
+                                <div class="orange">
+                                    <h2>Hip Hop</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f000000029bb6af539d072de34548d15c" alt="Hip Hop">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="mood">
+                            <a href="https://open.spotify.com/genre/mood-page">
+                                <div class="purple">
+                                    <h2>Mood</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002aa93fe4e8c2d24fc62556cba" alt="Mới phát hành">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="edm_dance">
+                            <a href="https://open.spotify.com/genre/edm_dance-page">
+                                <div class="pink">
+                                    <h2>Dance / Điện tử</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f000000020377baccf69ede3cf1a26eff" alt="Explore">
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+
+                   <!-- cột thứ ba -->
+                   <div class="second_content_music">
+                        <div class="rock">
+                            <a class="rock" href="https://open.spotify.com/genre/rock-page">
+                                <div class="red">
+                                    <h2>Rock</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002fe6d8d1019d5b302213e3730" alt="Rock">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="lofi">
+                            <a href="https://open.spotify.com/genre/chill-page">
+                                <div class="blue">
+                                    <h2>Thư giãn</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002c414e7daf34690c9f983f76e" alt="Chill">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div  class="radar">
+                            <a href="https://open.spotify.com/genre/radar-page">
+                                <div class="light_purple">
+                                    <h2>Radar</h2>
+                                    <img src="	https://t.scdn.co/images/c6677aa51acf4121b66b9d1f231bd427.png" alt="Radar">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="fresh_finds">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFImHYGo3eTSg">
+                                <div class="pink">
+                                    <h2>Fresh Finds</h2>
+                                    <img src="https://t.scdn.co/images/16e40e64d2a74fa8a0a020d456e6541d.jpeg" alt="Fresh Finds">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="equal">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFPw634sFwguI">
+                                <div class="green">
+                                    <h2>EQUAL</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f0000000284a1ec26f589f0d569805a07" alt="Equal">
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+                   
+                   <!-- cột thứ tư -->
+                   <div class="second_content_music">
+                        <div class="pride">
+                            <a class="pride" href="https://open.spotify.com/genre/pride-page">
+                                <div class="blue">
+                                    <h2>Pride</h2>
+                                    <img src="https://t.scdn.co/images/c9a01586687a45a78c56d9be5aed3c79.jpeg" alt="Pride">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="health">
+                            <a href="https://open.spotify.com/genre/wellness-page">
+                                <div class="pink">
+                                    <h2>Sức khoẻ</h2>
+                                    <img src="https://i.scdn.co/image/ab67656300005f1ff234909e69a68d92ca0af6ca" alt="Sức khoẻ">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div  class="league_of_legends">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFLYQVFHcXMae">
+                                <div class="green">
+                                    <h2>League of Legends</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f000000025f0ff9251e3cfe641160dc31" alt="League of Legends">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="stay_home">
+                            <a href="https://open.spotify.com/genre/new-releases-page">
+                                <div class="orange">
+                                    <h2>Ở nhà</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002ec9d60059aa215a7ba364695" alt="Ở nhà">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="in_car">
+                            <a href="https://open.spotify.com/genre/in_the_car-page">
+                                <div class="blue">
+                                    <h2>Trên xe</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002ffa215be1a4c64e3cbf59d1e" alt="Trên xe">
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+
+                   <!-- cột thứ năm -->
+                   <div class="second_content_music">
+                        <div class="gerne">
+                            <a class="gerne" href="https://open.spotify.com/genre/0JQ5DAqbMKFAUsdyVjCQuL">
+                                <div class="red">
+                                    <h2>Không gian lãng mạn</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f0000000213601d4833623a4d6b328e38" alt="Không gian lãng mạn">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="party">
+                            <a href="http://127.0.0.1:5500/trang_chinh02/index1.html">
+                                <div class="purple">
+                                    <h2>Tiệc tùng</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002caa115cbdb8cd3d39d67cdc0" alt="Tiệc tùng">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div  class="summer">
+                            <a href="https://open.spotify.com/genre/summer-page">
+                                <div class="yellow">
+                                    <h2>Mùa hè</h2>
+                                    <img src="https://t.scdn.co/images/a2a24668f16c4e9680233a0d7d244a4b.jpeg" alt="Mùa hè">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="sleep">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFCuoRTxhYWow">
+                                <div class="blue">
+                                    <h2>Ngủ ngon</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002b70e0223f544b1faa2e95ed0" alt="Ngủ ngon">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="gym">
+                            <a href="https://open.spotify.com/genre/workout-page">
+                                <div class="light_green">
+                                    <h2>Tập luyện</h2>
+                                    <img src="	https://i.scdn.co/image/ab67706f000000029249b35f23fb596b6f006a15" alt="Tập luyện">
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+
+                   <!-- cột thứ sáu -->
+                   <div class="second_content_music">
+                        <div class="indie">
+                            <a class="indie" href="https://open.spotify.com/genre/indie_alt-page">
+                                <div class="green">
+                                    <h2>Indie</h2>
+                                    <img src="	https://i.scdn.co/image/ab67706f000000025f7327d3fdc71af27917adba" alt="Indie">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="alternative">
+                            <a href="https://open.spotify.com/genre/alternative-page">
+                                <div class="blue">
+                                    <h2>Alternative</h2>
+                                    <img src="https://t.scdn.co/images/ee9451b3ed474c82b1da8f9b5eafc88f.jpeg" alt="Alternative">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div  class="all_out">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFIVNxQgRNSg0">
+                                <div class="red">
+                                    <h2>Ranking</h2>
+                                    <img src="https://t.scdn.co/images/b611cf5145764c64b80e91ccd5f357c8" alt="Thập niên">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="metal">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFDkd668ypn6O">
+                                <div class="pink">
+                                    <h2>Metal</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f0000000285704160b49125ac95099ec8" alt="Metal">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="kid_family">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFFoimhOqWzLB">
+                                <div class="yellow">
+                                    <h2>Trẻ em & Gia đình</h2>
+                                    <img src="https://t.scdn.co/images/15a38c44c4484cc3a078aaab5bd4e828" alt="Explore">
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+
+                   <!-- cột thứ bảy -->
+                   <div class="second_content_music">
+                        <div class="reggae">
+                            <a class="reggae" href="https://open.spotify.com/genre/0JQ5DAqbMKFJKoGyUMo2hE">
+                                <div class="purple">
+                                    <h2>Reggae</h2>
+                                    <img src="https://t.scdn.co/media/derived/reggae-274x274_2f11a0500528532b3bc580e3428e9610_0_0_274_274.jpg" alt="Regga">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="r&b">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFEZPnFQSFB1T">
+                                <div class="pink">
+                                    <h2>R&B</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f000000023c5a4aaf5df054a9beeb3d82" alt="R&B">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div  class="focus">
+                            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFCbimwdOYlsl">
+                                <div class="green">
+                                    <h2>Focus</h2>
+                                    <img src="	https://i.scdn.co/image/ab67706f00000002e4eadd417a05b2546e866934" alt="Focus">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="jazz">
+                            <a href="https://open.spotify.com/genre/jazz-page">
+                                <div class="blue">
+                                    <h2>Jazz</h2>
+                                    <img src="https://i.scdn.co/image/ab67706f00000002d72ef75e14ca6f60ea2364c2" alt="Jazz">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="netflix">
+                            <a href="https://open.spotify.com/genre/netflix-page">
+                                <div class="red">
+                                    <h2>Netflix</h2>
+                                    <img src="https://t.scdn.co/images/1a416fb97f5647858c7f09c9cb6e7301" alt="Netflix">
+                                </div>
+                            </a>
+                        </div>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js3.js"></script>
+</body>
+</html>

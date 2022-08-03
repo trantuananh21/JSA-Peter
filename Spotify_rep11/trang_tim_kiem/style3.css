@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;;
+}
+.main {
+    display: flex;
+}
+
+.left_of_page {
+    width: 20%;
+    position: fixed;
+}
+
+.right_of_page {
+    width: 84%;
+    background-color: gray;
+}
+
+.logo_page img{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+.content {
+    background-color: black;
+    height: 200vh;
+}
+
+.content a.active {
+    color: white;
+}
+.content a:hover:not(.active){
+    color: white;
+}
+
+.content a {
+    text-decoration: none;
+    color:#b3b3b3;
+    margin-left: 18%;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content li {
+    padding-bottom: 5%;
+}
+
+.content span {
+    padding-left: 4%;
+}
+
+#library {
+    padding-bottom: 15%;
+}
+
+
+/* end of content left */
+
+.nav {
+    background-color: black;
+    width: 1200px;
+    height: 9%;
+    text-align: right;
+    margin-left: 17%;
+    position: fixed;
+    display: flex;
+}
+.nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 100%;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.search_bar {
+    width: 70%;
+    max-width: 500px;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    margin-top: 1%;
+    margin-right: 28%;
+    margin-left: 5%;
+    padding-left: 25%;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search_bar input {
+    background: transparent ;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 17px;
+    color: gray;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.search_bar button {
+    border: 0;
+    border-radius:50% ;
+    width: 10%;
+    height: 150%;
+    background-color: #1DB954;
+    cursor: pointer;
+}
+
+#sign_up {
+    line-height: 50px;
+    color: gray;
+    padding: 14px 5px 14px 8px;
+}
+#sign_up:hover {
+    color: #1DB954;
+}
+
+#log_in {
+    background: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    height: 50px;
+    padding: 1px 30px;
+    color:#1a1a1a;
+    margin-top: 10px;
+    line-height: 50px;
+}
+
+#log_in:hover {
+    color: #1DB954;
+}
+/* end of nav bar */
+
+.main_content {
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    height: 101%;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+.headline h2{
+    margin-left: 80px;
+    padding-top: 50px;
+}
+
+
+/* second */
+.second_content_music {
+    display: flex;
+    padding: 40px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+.second_content_music h2{
+    padding: 10px 40px ;
+    color: white;
+    text-align: left;
+    padding-left: 13px;
+}
+.second_content_music img{
+    width: 170px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.second_content_music a{
+    padding: 40px;
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+
+/* background color */
+.light_green {
+    background-color: rgb(39, 133, 106);
+    height: 90%;
+    width: 190px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.blue{
+    background-color: rgb(30, 50, 100);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.purple{
+    background-color: rgb(141, 103, 171);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.red{
+    background-color: rgb(232, 17, 91);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.orange{
+    background-color: rgb(186, 93, 7);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.pink{
+    background-color: rgb(240, 55, 165);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.light_purple{
+    background-color: rgb(180, 155, 200);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.yellow{
+    background-color: rgb(255, 200, 100);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.green{
+    background-color: rgb(20, 138, 8);
+    height: 90%;
+    width: 188px;
+    margin: 20px;
+    border-radius: 20px;
+}

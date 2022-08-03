@@ -1,0 +1,72 @@
+*{
+    text-align: center;
+    
+    margin: 0px;
+        
+    padding: 0px;
+    
+    box-sizing: border-box;
+    
+    font-family: Helvetica, Arial, sans-serif;
+
+    background-color: black;
+}
+
+form {
+    margin: 40px 10px 10px 10px;
+    color: white;
+}
+
+input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    background-color: white;
+    color: gray;
+}
+h1 {
+    color: white;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+.logo{
+    color: #1ed760;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+label {
+    font-weight: 700;
+    padding-right: 10px;
+    font-size: 19px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+button {
+    background-color: #1ed760;
+    border: 1px solid #1ed760;
+    border-radius: 30px;
+    padding: 20px 40px 20px 40px;
+    font-weight: 700;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.birth select{
+    background-color: white;
+    color: gray;
+}

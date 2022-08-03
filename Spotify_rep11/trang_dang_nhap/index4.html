@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Spotify Rep 1:1</title>
+    <link rel="stylesheet" href="./style4.css">
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/trang_chinh02/index1.html" class="logo">Spotify Rep 1:1</a>
+    <h1>Đăng nhập để bắt đầu nghe</h1>
+    <form name="myForm02" action="./js4.js" onsubmit="return validateForm2()" method="dialog">
+        <div class="email">
+            <label for="email">Email </label>
+            <br>
+            <div class="content">
+                <input type="text" id="email" name="email" placeholder="Nhập email của bạn">
+                <br>
+            </div>
+        </div>
+        <br>
+
+        <div class="password">
+            <label for="password"> Mật khẩu</label>
+            <br>
+            <div class="content">
+                <input type="text" id="password" name="password" placeholder="Mật khẩu của bạn"> 
+            </div>
+            <br>
+            <label for="password_again"> Xác nhận lại mật khẩu</label>
+            <br>
+            <div class="content">
+                <input type="text" id="password_again" name="password_again" placeholder="Mật khẩu của bạn"> 
+            </div>
+        </div>
+        <br>
+
+      <button onclick="send02()" type="submit" value="submit">Đăng nhập</button>
+    </form>
+
+    <script src="./js4.js"></script>
+</body>
+</html>
